@@ -1,10 +1,13 @@
 import { Button } from '../../components/button';
 import styles from './home.module.scss';
-import { MdSearch, MdComputer, MdAttachMoney } from 'react-icons/md';
+import { MdSearch, MdComputer, MdAttachMoney, MdOutlinePrivacyTip } from 'react-icons/md';
+import { LiaTrophySolid } from 'react-icons/lia';
+import { AiFillSafetyCertificate } from 'react-icons/ai';
 
 export const Home = () => {
     return (
         <div className={styles.container}>
+            <div className={styles.fadebg} />
             <header>
                 <div className={styles.content}>
                     <div>
@@ -99,32 +102,165 @@ export const Home = () => {
             </section>
 
             <section className={styles.wbg}>
+                <div className={styles.fadebgleft} />
                 <div className={styles.summary}>
                     <div className={`${styles.sectionTitle} ${styles.centered}`}>
                         <span>CONTEÚDO DO LIVRO</span>
                         <span>Tudo o que você vai aprender</span>
                     </div>
 
-                    <div className={styles.module}>
-                        <div>
+                    <div className={styles.row}>
+                        <div className={styles.module}>
+                            <h3>A Idade é Apenas um Número</h3>
+                            <span>Vamos desmistificar a questão sobre ter idade certa para inciar a carreira na programação.</span>
+                        </div>
+
+                        <div className={styles.module}>
+                            <h3>Áreas da Programação</h3>
+                            <span>Uma das maiores dúvidas de quem está iniciando, é sobre qual área seguir. Aqui explicamos direitinho as principais para você escolher qual tem mais a ver contigo.</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.row}>
+                        <div className={styles.module}>
+                            <h3>Tecnologias e Linguagens</h3>
+                            <span>Dentro de cada área específica, saiba quais são as principais tecnologias e linguagens utilizadas no mercado à fora.</span>
+                        </div>
+
+                        <div className={styles.module}>
+                            <h3>Soft Skills</h3>
+                            <span>Nem só de conhecimento técnico vive o programador. Saiba como as soft skills influenciam diretamente no seu dia a dia e na sua carreira.</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.row}>
+                        <div className={styles.module}>
+                            <h3>Inglês</h3>
+                            <span>Hoje o inglês deixou de ser um diferencial. Na programação, isso fica ainda mais notável. Entenda o porquê.</span>
+                        </div>
+
+                        <div className={styles.module}>
+                            <h3>Como Começar a Estudar</h3>
+                            <span>Com tanta informação disponível nos dias de hoje, fica bem complicado saber o que consumir e como seguir nos estudos. Aqui você terá uma visão mais clara do que fazer para iniciar.</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.row}>
+                        <div className={styles.module}>
+                            <h3>Faculdade na Programação</h3>
+                            <span>Um dos maiores dilemas da área. Afinal, precisa ou não de faculdade para ser um programador? Aqui fica tudo muito claro.</span>
+                        </div>
+
+                        <div className={styles.module}>
+                            <h3>Produtividade e Tempo</h3>
+                            <span>Algumas dicas para tirar o máximo proveito dos seus estudos e como levar lado a lado com sua vida atual.</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.row}>
+                        <div className={styles.module}>
+                            <h3>Aplicando para Vagas</h3>
+                            <span>Saiba como e quando se aplicar para a sua primeira vaga no mercado de trabalho como programador.</span>
+                        </div>
+
+                        <div className={styles.module}>
                             <h3>Oportunidades Financeiras</h3>
                             <span>Aqui você vai entender como o mercado de trabalho está aquecido e a média salarial de cada uma das principais áreas.</span>
                         </div>
                     </div>
 
                     <div className={styles.module}>
-                        <h3>Oportunidades Financeiras</h3>
-                        <span>Aqui você vai entender como o mercado de trabalho está aquecido e a média salarial de cada uma das principais áreas.</span>
+                        <h3>A Minha Trilha de Estudos</h3>
+                        <span>No final eu vou mostrar detalhadamente a trilha que eu fiz para me tornar um especialista bem-sucedido.</span>
                     </div>
 
-                    <div className={styles.module}>
-                        <h3>Oportunidades Financeiras</h3>
-                        <span>Aqui você vai entender como o mercado de trabalho está aquecido e a média salarial de cada uma das principais áreas.</span>
-                    </div>
+                    <Button title="QUERO COMEÇAR" className={styles.button} />
+
                 </div>
             </section>
 
-            <footer></footer>
+            <div className={styles.priceContainer}>
+                <div className={styles.price}>
+                    <div>
+                        <img src="/assets/img/iphone_mockup.png" alt="" />
+
+                        <h5>APROVEITE</h5>
+
+                        <span className={styles.priceText}>12x DE <b>R$ 3,79</b></span>
+
+                        <span className={styles.priceSingle}>ou R$ 37,90 À VISTA</span>
+
+                        <Button title="COMPRAR AGORA" className={styles.button} />
+
+                        <div className={styles.footer}>
+                            <div>
+                                <AiFillSafetyCertificate className={styles.icon} />
+                                <span>Compra Segura</span>
+                            </div>
+                            <div>
+                                <LiaTrophySolid className={styles.icon} />
+                                <span>Satisfação Garantida</span>
+                            </div>
+                            <div>
+                                <MdOutlinePrivacyTip className={styles.icon} />
+                                <span>Privacidade Protegida</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.about}>
+                <div className={styles.photoBorder}>
+                    <div>
+                        <div className={styles.bg}>
+                            <img src="/assets/img/ramon.png" alt="" className={styles.me} />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={styles.fadebgwhoareme} />
+                    <div className={`${styles.sectionTitle} ${styles.right}`}>
+                        <span>QUEM SOU EU</span>
+                        <span>Saiba um pouco mais sobre mim</span>
+                    </div>
+
+                    <p>
+                        Meu nome é Ramon Campos, tenho 32 anos e atuo como programador desde 2012.
+                        Formado em Sistemas de Informação, passei por várias empresas durante minha carreira,
+                        indo de startups a multinacionais
+                    </p>
+                    <p>
+                        Nos últimos 5 anos foquei no meu desevolvimento pessoal e me aproximei mais do Frontend, me tornando especialista na área.
+                        Já atuei como arquiteto, tech lead, dev fullstack e hoje sou dev frontend, atuando com ReactJS e React Native.
+                    </p>
+                </div>
+            </div>
+
+            <div className={styles.questions}>
+                <div className={`${styles.sectionTitle} ${styles.centered}`}>
+                    <span>PERGUNTAS FREQUENTES</span>
+                    <span>Algumas perguntas recorrentes</span>
+                </div>
+
+                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
+                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+
+                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
+                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+
+                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
+                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+
+                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
+                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+            </div>
+
+            <footer>
+                <span>
+                    ® 2023 Ramon Campos | Todos os direitos reservados
+                </span>
+            </footer>
         </div>
     )
 }
