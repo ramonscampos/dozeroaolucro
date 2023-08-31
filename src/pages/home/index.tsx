@@ -17,7 +17,7 @@ export const Home = () => {
                             esclarecidas em um só livro. Não se sinta perdido e comece
                             agora sua jornada rumo ao lucro através da programação.
                         </span>
-                        <Button title="QUERO APRENDER" className={styles.button} />
+                        <Button href="https://pay.kiwify.com.br/Hj2n0t6" title="QUERO APRENDER" className={styles.button} />
                     </div>
 
                     <div>
@@ -174,7 +174,7 @@ export const Home = () => {
                         <span>No final eu vou mostrar detalhadamente a trilha que eu fiz para me tornar um especialista bem-sucedido.</span>
                     </div>
 
-                    <Button title="QUERO COMEÇAR" className={styles.button} />
+                    <Button href="https://pay.kiwify.com.br/Hj2n0t6" title="QUERO COMEÇAR" className={styles.button} />
 
                 </div>
             </section>
@@ -186,11 +186,11 @@ export const Home = () => {
 
                         <h5>APROVEITE</h5>
 
-                        <span className={styles.priceText}>12x DE <b>R$ 3,79</b></span>
+                        <span className={styles.priceText}>8x DE <b>R$ 5,40</b></span>
 
                         <span className={styles.priceSingle}>ou R$ 37,90 À VISTA</span>
 
-                        <Button title="COMPRAR AGORA" className={styles.button} />
+                        <Button href="https://pay.kiwify.com.br/Hj2n0t6" title="COMPRAR AGORA" className={styles.button} />
 
                         <div className={styles.footer}>
                             <div>
@@ -246,14 +246,14 @@ export const Home = () => {
                 <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
                 <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
 
-                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
-                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+                <div className={styles.question}>O livro vai ser atualizado com o tempo?</div>
+                <div className={styles.answer}>As informações compartilhadas aqui constituem os fundamentos da programação e permanecerão inalteradas. No entanto, esteja ciente de que qualquer conteúdo NOVO que eu considere relevante será acrescentado posteriormente. Aqueles que adquirirem o livro terão acesso a todas as atualizações pelos próximos 12 meses.</div>
 
-                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
-                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+                <div className={styles.question}>Quando o livro será entregue?</div>
+                <div className={styles.answer}>Após a confirmação do pagamento, você receberá o link de acesso em seu e-mail em até 15 minutos.</div>
 
-                <div className={styles.question}>Vou aprender a programar lendo este livro?</div>
-                <div className={styles.answer}>O intuito deste livro é apresentar as principais questões básicas da programação e te guiar de forma que você consiga saber por onde começar a estudar.</div>
+                <div className={styles.question}>Existe uma garantia?</div>
+                <div className={styles.answer}>A partir da data da compra, você conta com uma garantia de 7 dias.</div>
             </div>
 
             <footer>
