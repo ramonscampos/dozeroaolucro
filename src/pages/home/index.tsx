@@ -11,7 +11,7 @@ export const Home = () => {
             <header>
                 <div className={styles.content}>
                     <div>
-                        <h1>Saiba como inciar sua jornada no mundo da programação <br />e <span>fature com isso</span></h1>
+                        <h1>Saiba como iniciar sua jornada no mundo da programação <br />e <span>fature com isso</span></h1>
                         <span>
                             Todas as principais dúvidas de quem está começando,
                             esclarecidas em um só livro. Não se sinta perdido e comece
