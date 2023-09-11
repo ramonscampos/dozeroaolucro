@@ -46,48 +46,70 @@
     }
 
     header {
-        background: linear-gradient(#0F0F0F 30%, #000);
+        background-image: url('../../../public/assets/img/header-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-top: 260px;
+        overflow: hidden;
+        position: relative;
+
+        .fader {
+            position: absolute;   
+            inset: 0;
+            background-color: rgba(0,0,0,0.6);
+            z-index: 0;
+        }
 
         .content {
-            display: flex;
-            gap: 10 px40px;
-            justify-content: space-between;
-            flex-wrap: wrap-reverse;
+            background: linear-gradient(#0000 80%, #000);
+            margin-left: 0;
+            width: 100vw;
+            max-width: inherit;
+            z-index: 2;
 
-            > div {
-                
-                > span {
+            .centered {
+                display: flex;
+                gap: 10 px 40px;
+                justify-content: space-between;
+                flex-wrap: wrap-reverse;
+                max-width: 1366px;
+                margin: 0 auto;
+                position: relative;
+
+                > div:not(.fader) {
+                    
+                    > span {
+                        color: white;
+                        font-weight: 300;
+                        line-height: 150%;
+                        margin-top: 24px;
+                        font-size: 1.5rem;
+                        display: block;
+                    }
+
+                    &:first-of-type {
+                        max-width: 650px;
+                    }
+
+                    img {
+                        width: 100%;
+                        max-width: 600px;
+                    }
+                }
+
+                h1 {
                     color: white;
-                    font-weight: 300;
-                    line-height: 150%;
-                    margin-top: 24px;
-                    font-size: 1.5rem;
-                    display: block;
+                    font-size: 3rem;
+                    font-weight: 400;
+
+                    span {
+                        color: #66FFCC;
+                    }
                 }
 
-                &:first-of-type {
-                    max-width: 650px;
+                .button {
+                    margin-top: 40px;
                 }
-
-                img {
-                    width: 100%;
-                    max-width: 600px;
-                }
-            }
-
-            h1 {
-                color: white;
-                font-size: 3rem;
-                font-weight: 400;
-
-                span {
-                    color: #66FFCC;
-                }
-            }
-
-            .button {
-                margin-top: 40px;
             }
         }
     }

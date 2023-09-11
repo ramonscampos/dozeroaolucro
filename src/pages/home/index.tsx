@@ -9,19 +9,22 @@ export const Home = () => {
         <div className={styles.container}>
             <div className={styles.fadebg} />
             <header>
+                <div className={styles.fader} />
                 <div className={styles.content}>
-                    <div>
-                        <h1>Saiba como iniciar sua jornada no mundo da programação <br />e <span>fature com isso</span></h1>
-                        <span>
-                            Todas as principais dúvidas de quem está começando,
-                            esclarecidas em um só livro. Não se sinta perdido e comece
-                            agora sua jornada rumo ao lucro através da programação.
-                        </span>
-                        <Button href="https://pay.kiwify.com.br/Hj2n0t6" title="QUERO APRENDER" className={styles.button} />
-                    </div>
+                    <div className={styles.centered}>
+                        <div>
+                            <h1>Saiba como iniciar sua jornada no mundo da programação <br />e <span>fature com isso</span></h1>
+                            <span>
+                                Todas as principais dúvidas de quem está começando,
+                                esclarecidas em um só livro. Não se sinta perdido e comece
+                                agora sua jornada rumo ao lucro através da programação.
+                            </span>
+                            <Button href="https://pay.kiwify.com.br/Hj2n0t6" title="QUERO APRENDER" className={styles.button} />
+                        </div>
 
-                    <div>
-                        <img src="/assets/img/mockup.png" alt="" />
+                        <div>
+                            <img src="/assets/img/mockup.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </header>
