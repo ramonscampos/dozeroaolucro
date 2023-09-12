@@ -189,9 +189,9 @@ export const Home = () => {
 
                         <h5>APROVEITE</h5>
 
-                        <span className={styles.priceText}>8x DE <b>R$ 5,40</b></span>
+                        <span className={styles.priceText}>5x DE <b>R$ 5,89</b></span>
 
-                        <span className={styles.priceSingle}>ou R$ 37,90 À VISTA</span>
+                        <span className={styles.priceSingle}>ou R$ 27,00 À VISTA</span>
 
                         <Button href="https://pay.kiwify.com.br/Hj2n0t6" title="COMPRAR AGORA" className={styles.button} />
 
